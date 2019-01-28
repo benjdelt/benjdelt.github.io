@@ -802,7 +802,7 @@ call-to-action .button {
 }
 #contact .section-head { margin-bottom: 42px; }
 
-#contact a, #contact a:visited  { color: #7fb3d5; }
+/* #contact a, #contact a:visited  { color: #7fb3d5; } */
 #contact a:hover, #contact a:focus { color: #fff; }
 
 #contact h1 {
@@ -835,6 +835,19 @@ call-to-action .button {
 }
 #contact .header-col { padding-top: 6px; }
 
+#contact .button {
+   margin-top: 6px;
+   background: #5499c7;
+   color: #fff;
+}
+#contact .button:hover {
+   background: #fff;
+   color: #5499c7;
+}
+#contact .button i {
+   margin-right: 15px;
+   font-size: 20px;
+}
 
 /* contact form */
 #contact form { margin-bottom: 30px; }

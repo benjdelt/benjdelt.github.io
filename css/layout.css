@@ -264,6 +264,12 @@ ul#nav li.current a { color: #F06000; }
    font-weight: bold;
 }
 
+#skills p i {
+   display: inline-block;
+   font-size: 500%;
+   margin: 0 15px 25px 0;
+}
+
 #skills .header-col { padding-top: 9px; }
 #skills .main-col { padding-right: 10%; }
 
@@ -907,9 +913,15 @@ call-to-action .button {
     margin-left: 25px;
     color: #F06000;
 }
+#contact .social-links li i:hover {
+   color: #5499c7;
+}
 #contact .social-links li:first-child { 
    margin-left: 0; 
    color: #fff;
+}
+#contact .social-links li:first-child:hover { 
+   margin-left: 0;   
 }
 #contact .button i {
    margin-right: 15px;

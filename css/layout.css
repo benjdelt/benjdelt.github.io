@@ -9,6 +9,7 @@
    a. General Styles
    b. Header Styles
    c. About Section
+   - . Skills Section
    d. Resume Section
    e. Portfolio Section
    f. Call To Action Section
@@ -230,6 +231,56 @@ ul#nav li.current a { color: #F06000; }
    font-size: 20px;
 }
 
+/* ------------------------------------------------------------------ */
+/* -. Skills Section
+/* ------------------------------------------------------------------ */
+
+#skills {
+   background: #1f618d;
+   padding-top: 90px;
+   padding-bottom: 72px;
+   overflow: hidden;
+   color: #fff;
+}
+
+#skills a, #skills a:visited  { color: #2471a3; }
+#skills a:hover, #skills a:focus { color: #2980b9; }
+
+#skills h1 {
+   font: 18px/24px 'opensans-bold', sans-serif;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+   color: #fff;
+}
+#skills h1 span {
+   border-bottom: 3px solid #f06000;
+   padding-bottom: 6px;
+}
+#skills h3 {
+   font: 25px/30px 'opensans-bold', sans-serif;
+   color: #fff;
+}
+#skills p span {
+   font-weight: bold;
+}
+
+#skills .header-col { padding-top: 9px; }
+#skills .main-col { padding-right: 10%; }
+
+#skills .info {
+   font: 16px/24px 'opensans-italic', sans-serif;
+   color: #fff;
+   margin-bottom: 18px;
+   margin-top: 9px;
+}
+#skills .info span {
+   margin-right: 5px;
+   margin-left: 5px;
+}
+#skills .date {
+   font: 15px/24px 'opensans-regular', sans-serif;
+   margin-top: 6px;
+}
 
 /* ------------------------------------------------------------------ */
 /* d. Resume Section
@@ -265,7 +316,7 @@ ul#nav li.current a { color: #F06000; }
 #resume .header-col { padding-top: 9px; }
 #resume .main-col { padding-right: 10%; }
 
-.skill, .work, .education {
+.work, .education {
    margin-bottom: 48px;
    padding-bottom: 24px;
    border-bottom: 1px solid #E8E8E8;
@@ -588,7 +639,7 @@ ul#nav li.current a { color: #F06000; }
 /* f. Call To Action Section
 /* ------------------------------------------------------------------ */
 
-#call-to-action {
+/* #call-to-action {
    background: #212121;
    padding-top: 66px;
    padding-bottom: 48px;
@@ -624,14 +675,14 @@ ul#nav li.current a { color: #F06000; }
 #call-to-action p {
    color: #636363;
    font-size: 17px;
-}
+} */
 /*#
 call-to-action .button {
 	color:#fff;
    background: #0D0D0D;
 }
 */
-#call-to-action .button:hover,
+/* #call-to-action .button:hover,
 #call-to-action .button:active {
    background: #FFFFFF;
    color: #0D0D0D;
@@ -639,7 +690,7 @@ call-to-action .button {
 #call-to-action p span {
 	font-family: 'opensans-semibold', sans-serif; 
 	color: #D8D8D8;
-}
+} */
 
 /* ------------------------------------------------------------------
 /* g. Testimonials
@@ -843,6 +894,22 @@ call-to-action .button {
 #contact .button:hover {
    background: #fff;
    color: #5499c7;
+}
+#contact .social-links {
+   margin: 18px 0 30px 0;
+   padding: 0;
+   font-size: 30px;
+}
+#contact .social-links li {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    margin-left: 25px;
+    color: #F06000;
+}
+#contact .social-links li:first-child { 
+   margin-left: 0; 
+   color: #fff;
 }
 #contact .button i {
    margin-right: 15px;

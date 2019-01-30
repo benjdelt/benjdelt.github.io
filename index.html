@@ -29,7 +29,8 @@
    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
    <!-- Devicon -->
    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-
+   <!-- Animate on Scroll Library (JS Script before </body>) -->
+   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
    <!-- Script
    ================================================== -->
@@ -55,20 +56,22 @@
           <li><a class="smoothscroll" href="#skills">Skills</a></li>
           <li><a class="smoothscroll" href="#portfolio">Projects</a></li>
           <li><a class="smoothscroll" href="#resume">Resume</a></li>
-          <!-- <li><a class="smoothscroll" href="#testimonials">Testimonials</a></li> -->
+          <li><a class="smoothscroll" href="#testimonials">References</a></li>
           <li><a class="smoothscroll" href="#contact">Contact</a></li>
         </ul> <!-- end #nav -->
       </nav> <!-- end #nav-wrap -->
       <div class="row banner">
         <div class="banner-text">
           <h1 class="responsive-headline">Benjamin Deltenre</h1>
-          <h3>
-            <span>Full Stack Web Developer</span> with a passion for building apps and creative 
-            <span>problem solving</span>. I bring a strong focus to details and good time 
-            management skills from my <span>8 years of experience</span> in the government finance sector. 
-            I am a dedicated life-long learner always eager to discover innovative ideas. 
-            Fluent in English and French. Legally entitled to work in Canada. 
+          <div class="summary-container">
+            <h3>
+              <span>Full Stack Web Developer</span> with a passion for building apps and creative 
+              problem solving. I bring a strong focus to details and good time 
+              management skills from my <span>8 years of experience</span> in the government finance sector. 
+              I am a dedicated life-long learner always eager to discover innovative ideas. 
+              Fluent in English and French. <span>Legally entitled to work in Canada</span>. 
             </h3>
+          </div>
           <hr />
           <ul class="social">
             <li>
@@ -157,12 +160,12 @@
           <h3>Languages</h3>
           <div class="bars">
             <p>
-              <i class="devicon-javascript-plain"></i>
-              <i class="devicon-ruby-plain-wordmark"></i>
-              <i class="devicon-html5-plain-wordmark"></i>
-              <i class="devicon-css3-plain-wordmark"></i>
-              <i class="devicon-python-plain-wordmark"></i>
-              <i class="devicon-c-plain-wordmark"></i>
+              <i class="devicon-javascript-plain" title="JavaScript" data-aos="fade-left"></i>
+              <i class="devicon-ruby-plain-wordmark" title="Ruby" data-aos="fade-left"></i>
+              <i class="devicon-html5-plain-wordmark" title="HTML" data-aos="fade-left"></i>
+              <i class="devicon-css3-plain-wordmark" title="CSS" data-aos="fade-left"></i>
+              <i class="devicon-python-plain-wordmark" title="Python" data-aos="fade-left"></i>
+              <i class="devicon-c-plain-wordmark" title="C" data-aos="fade-left"></i>
               <br>
               <!-- JavaScript, Ruby, HTML, CSS, Python, C -->
             </p>
@@ -178,16 +181,16 @@
           </div><!-- end skill-bars -->
           <h3>Tools &amp; Libraries</h3>
           <p>
-            <i class="devicon-nodejs-plain-wordmark"></i>
-            <i class="devicon-express-original-wordmark"></i>
-            <i class="devicon-react-original-wordmark"></i>
-            <i class="devicon-jquery-plain-wordmark"></i>
-            <i class="devicon-rails-plain-wordmark"></i>
-            <i class="devicon-bootstrap-plain-wordmark"></i>
-            <i class="devicon-django-plain"></i>
-            <i class="devicon-mongodb-plain-wordmark"></i>
-            <i class="devicon-postgresql-plain-wordmark"></i>
-            <i class="devicon-git-plain-wordmark"></i>
+            <i class="devicon-nodejs-plain-wordmark" title="Node.js" data-aos="fade-left"></i>
+            <i class="devicon-express-original-wordmark" title="Express" data-aos="fade-left"></i>
+            <i class="devicon-react-original-wordmark" title="React" data-aos="fade-left"></i>
+            <i class="devicon-jquery-plain-wordmark" title="jQuery" data-aos="fade-left"></i>
+            <i class="devicon-rails-plain-wordmark" title="Ruby on Rails" data-aos="fade-left"></i>
+            <i class="devicon-bootstrap-plain-wordmark" title="Bootstrap" data-aos="fade-left"></i>
+            <i class="devicon-django-plain" title="Django" data-aos="fade-left"></i>
+            <i class="devicon-mongodb-plain-wordmark" title="MongoDB" data-aos="fade-left"></i>
+            <i class="devicon-postgresql-plain-wordmark" title="PostgreSQL" data-aos="fade-left"></i>
+            <i class="devicon-git-plain-wordmark" title="Git" data-aos="fade-left"></i>
             <br>
             <!-- Node.js, Express, React, Redux, jQuery, Ruby on Rails, Bootstrap, 
             Django, MongoDB, PostgreSQL, Git -->
@@ -411,12 +414,12 @@
                   under pressure
                 </li>
                 <li>
-                  <span>•</span> Worked as part of a <span>team of 4 controllers</span> to harmonise 
-                  control operations
+                  <span>•</span> Worked as part of a <span>team of 4 controllers</span> to control subsidies and 
+                  public contracts for the whole Federation
                 </li>
                 <li>
                   <span>•</span> Implemented <span>unique procedure</span> for different functional 
-                  departments
+                  departments to harmonize control operations
                 </li>
                 <li>
                   <span>•</span> <span>Inspected</span> public contracts and subsidies before charging 
@@ -471,7 +474,7 @@
 
    <!-- Testimonials Section
    ================================================== -->
-   <!-- <section id="testimonials">
+   <section id="testimonials">
 
       <div class="text-container">
 
@@ -479,7 +482,7 @@
 
             <div class="two columns header-col">
 
-               <h1><span>Client Testimonials</span></h1>
+               <h1><span>References</span></h1>
 
             </div>
 
@@ -490,43 +493,57 @@
                   <ul class="slides">
 
                      <li>
-                        <blockquote>
-                           <p>Your work is going to fill a large part of your life, and the only way to be truly satisfied is
-                           to do what you believe is great work. And the only way to do great work is to love what you do.
-                           If you haven't found it yet, keep looking. Don't settle. As with all matters of the heart, you'll know when you find it.
-                           </p>
-                           <cite>Steve Jobs</cite>
-                        </blockquote>
+                         <div class="reference-container">  
+                          <blockquote>
+                            <p>
+                                Ben is a very strong web developer who perseveres to solve technical problems. 
+                                He consistently demonstrated an ability to problem solve when implementing new 
+                                features. Ben always communicated quickly and clearly about progress on tickets 
+                                and asked questions when he got stuck. He read the company's documentation and 
+                                followed coding standards. His code was always very clear, efficient and satisfied 
+                                the requirements. Ben follows through on his commitments and made himself an 
+                                invaluable asset to the team. I would highly recommend working with Ben! 
+                            </p>
+                            <cite>Scott Hirsch, Co-Founder at TalentMarketplace</cite>
+                          </blockquote>
+                        </div>
                      </li> 
-   -->
+  
                      <!-- slide ends -->
-   <!--
+   
                      <li>
-                        <blockquote>
-                           <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
-                           Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem
-                           nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.
-                           </p>
-                           <cite>Mr. Adobe</cite>
-                        </blockquote>
+                        <div class="reference-container">  
+
+                          <blockquote>
+                            <p>
+                                Benjamin Deltenre is an asset to a team. He is very rigorous, reliable and 
+                                trustworthy as he proved countless times how well he knows his job. He is tactful 
+                                in his relations with other people and very clear when he needs to teach to new 
+                                collaborators. He makes himself available to answer questions and to help around 
+                                the team. Moreover, he is interesting, always calm and smiling even under 
+                                stressful situations.
+                            </p>
+                            <cite>Loriane Defourny, Accounting Team Lead at Wallonia-Brussels Federation</cite>
+                          </blockquote>
+                        </div>
                      </li> 
-   -->                  
+                    
                      <!-- slide ends -->
-   <!-- 
+   
                   </ul>
 
-               </div> --><!-- div.flexslider ends -->
+               </div><!-- div.flexslider ends -->
 
-            <!-- </div>  -->
+            </div> 
             <!-- div.flex-container ends -->
 
-         <!-- </div>  -->
+         </div> 
          <!-- row ends -->
 
-      <!-- </div>  -->
+      </div> 
       <!-- text-container ends -->
 
-   <!-- </section>  -->
+   </section> 
    <!-- Testimonials Section End-->
 
 
@@ -654,18 +671,24 @@
       </div>
     </footer> <!-- Footer End-->
 
-   <!-- Java Script
-   ================================================== -->
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-   <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
-   <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+  <!-- Java Script
+  ================================================== -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
+  <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
 
-   <script src="js/jquery.flexslider.js"></script>
-   <script src="js/waypoints.js"></script>
-   <script src="js/jquery.fittext.js"></script>
-   <script src="js/magnific-popup.js"></script>
-   <script src="js/init.js"></script>
+  <script src="js/jquery.flexslider.js"></script>
+  <script src="js/waypoints.js"></script>
+  <script src="js/jquery.fittext.js"></script>
+  <script src="js/magnific-popup.js"></script>
+  <script src="js/init.js"></script>
 
+  <!-- Animate on Scroll Library (CSS Link in <head>) -->
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>

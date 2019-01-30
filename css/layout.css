@@ -65,12 +65,36 @@ header .banner-text h1 {
    margin: 0 auto 18px auto;
    text-shadow: 0px 1px 3px rgba(0, 0, 0, .8);
 }
+header .banner-text .summary-container {
+   position: relative;
+   padding: 30px 0 30px 0;
+   z-index: 1;
+}
+header .banner-text .summary-container:before {
+   content: "";
+   position: absolute;
+   z-index: -1;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   background: #b0b0b0 center center; 
+   opacity: .4;
+   border-radius: 7px;
+   margin: 0 83px;
+}
+@media (max-width: 900px) {
+   header .banner-text .summary-container:before {
+      display: none;
+   }
+}
 header .banner-text h3 {
    font: 18px/1.9em 'opensans-regular', sans-serif;
    color: #fff;
    margin: 0 auto;
    width: 70%;
-   text-shadow: 0px 1px 2px rgba(0, 0, 0, .5);
+   /* text-shadow: 0px 1px 2px rgba(0, 0, 0, .5); */
+   opacity: 1;
 }
 header .banner-text h3 span,
 header .banner-text h3 a {
@@ -267,7 +291,7 @@ ul#nav li.current a { color: #F06000; }
 #skills p i {
    display: inline-block;
    font-size: 500%;
-   margin: 0 15px 25px 0;
+   margin: 15px 60px 40px 0;
 }
 
 #skills .header-col { padding-top: 9px; }
@@ -737,19 +761,54 @@ call-to-action .button {
 }
 
 /*	Blockquotes */
+#testimonials .reference-container {
+   background: inherit;
+   background-attachment: fixed;
+   position: relative;
+   padding: 0px 5px 0px 15px;
+   z-index: 1;
+}
+#testimonials .reference-container:before {
+   content: "";
+   position: absolute;
+   z-index: -1;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   background: #b0b0b0 center center; 
+   opacity: .4;
+   border-radius: 7px;
+   width: 656px;
+}
+@media (max-width: 900px) {
+   #testimonials .reference-container:before {
+      display: none;
+   }
+}
+
 #testimonials blockquote {
    margin: 0 0px 30px 0px;
-   padding-left: 0;
+   /* padding-left: 0; */
    position: relative;
-   text-shadow: 0px 1px 3px rgba(0, 0, 0, 1);
+   /* text-shadow: 0px 1px 3px rgba(0, 0, 0, 1); */
+   z-index: 1;
 }
 #testimonials blockquote:before { content: none; }
 #testimonials blockquote p {
-   font-family: 'librebaskerville-italic', serif;
-   padding: 0;
+   font-family: 'opensans-regular', sans-serif;
+   padding: 41px 10px 27px 0;
    font-size: 24px;
-   line-height: 48px;
-   color: #fff
+   line-height: 32px;
+   color: #fff;
+   margin: 0;
+   width: 574px;
+}
+@media (max-width: 900px) {
+   #testimonials blockquote p {
+      width: 100%;
+      font-weight: bold;
+   }
 }
 #testimonials blockquote cite {
    display: block;
@@ -757,6 +816,7 @@ call-to-action .button {
    font-style: normal;
    line-height: 18px;
    color: #fff;
+   padding-bottom: 27px;
 }
 #testimonials blockquote cite:before { content: "\2014 \0020"; }
 #testimonials blockquote cite a,
@@ -814,7 +874,7 @@ call-to-action .button {
 .flex-control-nav {
     width: 100%;
     position: absolute;
-    bottom: -20px;
+    bottom: -35px;
     text-align: left;
 }
 .flex-control-nav li {

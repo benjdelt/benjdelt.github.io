@@ -37,8 +37,8 @@
 /* Highlight the current section in the navigation bar
 ------------------------------------------------------*/
 
-	var sections = $("section");
-	var navigation_links = $("#nav-wrap a");
+	var sections = $('section');
+	var navigation_links = $('#nav-wrap a');
 
 	sections.waypoint({
 
@@ -47,12 +47,12 @@
 		   var active_section;
 
 			active_section = $(this);
-			if (direction === "up") active_section = active_section.prev();
+			if (direction === 'up') active_section = active_section.prev();
 
 			var active_link = $('#nav-wrap a[href="#' + active_section.attr("id") + '"]');
 
-         navigation_links.parent().removeClass("current");
-			active_link.parent().addClass("current");
+         navigation_links.parent().removeClass('current');
+			active_link.parent().addClass('current');
 
 		},
 		offset: '35%'
@@ -122,8 +122,8 @@
 /*	Flexslider
 /*----------------------------------------------------*/
    $('.flexslider').flexslider({
-      namespace: "flex-",
-      controlsContainer: ".flex-container",
+      namespace: 'flex-',
+      controlsContainer: '.flex-container',
       animation: 'slide',
       controlNav: true,
       directionNav: false,
@@ -149,30 +149,28 @@
       var data = 'contactName=' + contactName + '&contactEmail=' + contactEmail +
                '&contactSubject=' + contactSubject + '&contactMessage=' + contactMessage;
 
+      function messageWarning(message) {
+         $('#image-loader').fadeOut();
+         $('#message-warning').html(message);
+         $('#message-warning').fadeIn();
+      }
+
       if (!contactName.trim() || !contactEmail.trim() || !contactMessage.trim()) {
-         $('#image-loader').fadeOut();
-         $('#message-warning').html("Please fill in all the required fields");
-         $('#message-warning').fadeIn();
+         messageWarning('Please fill in all the required fields');
       } else if (contactName.length < 2) {
-         $('#image-loader').fadeOut();
-         $('#message-warning').html("Name must contain at least 2 characters");
-         $('#message-warning').fadeIn();
+         messageWarning('Name must contain at least 2 characters');
       } else if ((!/^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(contactEmail))) {
-         $('#image-loader').fadeOut();
-         $('#message-warning').html("Invalid email format");
-         $('#message-warning').fadeIn();
+         messageWarning('Invalid email format');
       } else if (contactMessage.length < 5) {
-         $('#image-loader').fadeOut();
-         $('#message-warning').html("Message must contain at least 5 characters");
-         $('#message-warning').fadeIn();
+         messageWarning('Message must contain at least 5 characters');
       } else {
          $.ajax({
    
-            type: "POST",
-            url: "https://script.google.com/macros/s/AKfycbxGr4KqvhlyWQwwVfJ6MxAihuMIdAkxM7VOICacJsHNd9DI4_k/exec",
+            type: 'POST',
+            url: 'https://script.google.com/macros/s/AKfycbxGr4KqvhlyWQwwVfJ6MxAihuMIdAkxM7VOICacJsHNd9DI4_k/exec',
             data: data,
             success: function(msg) {
-               console.log("Return from google script:", msg);
+               console.log('Return from google script:', msg);
                // Message was sent
                if (msg.result == 'success') {
                   $('#image-loader').fadeOut();

@@ -805,6 +805,12 @@ call-to-action .button {
    width: 574px;
 }
 @media (max-width: 900px) {
+   #testimonials {
+      background: #1F1F1F url(../images/testimonials-bg-mobile.jpg) no-repeat center center;
+      background-size: cover !important;
+      -webkit-background-size: cover !important;
+      background-attachment: fixed;
+   }
    #testimonials blockquote p {
       width: 100%;
       font-weight: bold;

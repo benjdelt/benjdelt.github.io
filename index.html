@@ -211,7 +211,22 @@
           <div id="portfolio-wrapper" class="bgrid-quarters s-bgrid-thirds cf">
             <div class="columns portfolio-item">
               <div class="item-wrap">
-                <a href="#modal-01" title="Tinee">
+                <a href="#modal-01" title="Spotify Lyrics">
+                  <img alt="Spotify Lyrics" src="images/portfolio/spotify-lyrics.jpg" />
+                  <div class="overlay">
+                    <div class="portfolio-item-meta">
+                      <h5>Spotify Lyrics</h5>
+                      <p>Get the lyrics of the track currently being played on the user's Spotify account.</p>
+                    </div>
+                  </div>
+                  <div class="link-icon"><i class="icon-plus"></i></div>
+                </a>
+              </div>
+              <p class="tech-stack">React, Redux, Express</p>
+            </div> <!-- item end -->
+            <div class="columns portfolio-item">
+              <div class="item-wrap">
+                <a href="#modal-02" title="Tinee">
                   <img alt="Tinee" src="images/portfolio/tinee.jpg" />
                   <div class="overlay">
                     <div class="portfolio-item-meta">
@@ -226,7 +241,7 @@
             </div> <!-- item end -->
             <div class="columns portfolio-item">
               <div class="item-wrap">
-                <a href="#modal-02" title="InForm">
+                <a href="#modal-03" title="InForm">
                   <img alt="Inform" src="images/portfolio/inform.jpg" />
                   <div class="overlay">
                     <div class="portfolio-item-meta">
@@ -241,7 +256,7 @@
             </div> <!-- item end -->
             <div class="columns portfolio-item">
               <div class="item-wrap">
-                <a href="#modal-03" title="ChattyApp">
+                <a href="#modal-04" title="ChattyApp">
                   <img alt="ChatyApp" src="images/portfolio/chatty.jpg" />
                   <div class="overlay">
                     <div class="portfolio-item-meta">
@@ -254,27 +269,35 @@
               </div>
               <p class="tech-stack">Express, React WebSockets</p>
             </div> <!-- item end -->
-            <div class="columns portfolio-item">
-              <div class="item-wrap">
-                <a href="#modal-04" title="Tut Bucket">
-                  <img alt="Tut Bucket" src="images/portfolio/tutbucket.jpg" />
-                  <div class="overlay">
-                    <div class="portfolio-item-meta">
-                      <h5>Tut Bucket</h5>
-                      <p>Web app that allows learners to save learning resources like tutorials</p>
-                    </div>
-                  </div>
-                  <div class="link-icon"><i class="icon-plus"></i></div>
-                </a>
-              </div>
-              <p class="tech-stack">PostgreSQL, Express, jQuery</p>
-            </div> <!-- item end -->
             
           </div> <!-- portfolio-wrapper end -->
         </div> <!-- twelve columns end -->
         <!-- Modal Popup
         --------------------------------------------------------------- -->
         <div id="modal-01" class="popup-modal mfp-hide">
+          <a href="https://github.com/benjdelt/spotify-lyrics" rel="noopener noreferrer" target="_blank">
+            <img class="scale-with-grid" src="images/portfolio/modals/spotify-lyrics.png" alt="Spotify Lyrics" />
+          </a>
+          <div class="description-box">
+            <h4>Spotify Lyrics</h4>
+            <p>
+                A full stack web app built with <span>React, Redux and Express</span>. It connects to the Spotify API 
+                and to API Seeds Lyrics to automatically get the information and the lyrics of the track currently 
+                being played on the user's Spotify account.
+            </p>
+            <span class="categories"><i class="fa fa-layer-group"></i>React, Redux and Express, Spotify API</span>
+          </div>
+          <div class="link-box">
+            <a href="https://github.com/benjdelt/spotify-lyrics" rel="noopener noreferrer" target="_blank">
+              <i class="fab fa-github"></i> GitHub 
+            </a>
+            <a href="http://bens-spotify-lyrics.herokuapp.com" rel="noopener noreferrer" target="_blank">
+              <i class="devicon-heroku-original"></i> Heroku 
+            </a>
+            <a class="popup-modal-dismiss">Close</a>
+          </div>
+        </div><!-- modal-01 End -->
+        <div id="modal-02" class="popup-modal mfp-hide">
           <a href="https://github.com/benjdelt/tinee" rel="noopener noreferrer" target="_blank">
             <img class="scale-with-grid" src="images/portfolio/modals/tinee.png" alt="Tinee" />
           </a>
@@ -293,8 +316,8 @@
             </a>
             <a class="popup-modal-dismiss">Close</a>
           </div>
-        </div><!-- modal-01 End -->
-        <div id="modal-02" class="popup-modal mfp-hide">
+        </div><!-- modal-02 End -->
+        <div id="modal-03" class="popup-modal mfp-hide">
           <a href="https://github.com/benjdelt/InForm" rel="noopener noreferrer" target="_blank">
             <img class="scale-with-grid" src="images/portfolio/modals/inform.png" alt="InForm" />
           </a>
@@ -314,8 +337,8 @@
             </a>
             <a class="popup-modal-dismiss">Close</a>
           </div>
-        </div><!-- modal-02 End -->
-        <div id="modal-03" class="popup-modal mfp-hide">
+        </div><!-- modal-03 End -->
+        <div id="modal-04" class="popup-modal mfp-hide">
           <a href="https://github.com/benjdelt/chattyApp" rel="noopener noreferrer" target="_blank">
             <img class="scale-with-grid" src="images/portfolio/modals/chatty.png" alt="ChattyApp" />
           </a>
@@ -329,26 +352,6 @@
           </div>
           <div class="link-box">
             <a href="https://github.com/benjdelt/chattyApp" rel="noopener noreferrer" target="_blank">
-            <i class="fab fa-github"></i> GitHub
-            </a>
-            <a class="popup-modal-dismiss">Close</a>
-          </div>
-        </div><!-- modal-03 End -->
-        <div id="modal-04" class="popup-modal mfp-hide">
-          <a href="https://github.com/benjdelt/tut-bucket" rel="noopener noreferrer" target="_blank">
-            <img class="scale-with-grid" src="images/portfolio/modals/tutbucket.png" alt="Tut Bucket" />
-          </a>
-          <div class="description-box">
-            <h4>Tut Bucket</h4>
-            <p>
-              Full stack web app built with <span>Node, Express, PostgreSQL, jQuery and Bootstrap</span>. It allows 
-              learners to save learning resources like tutorials, blogs and videos in a central place 
-              that is publicly available for any user. (Aug 2018)
-            </p>
-            <span class="categories"><i class="fa fa-layer-group"></i>PostgreSQL, Express, jQuery, Bootstrap</span>
-          </div>
-          <div class="link-box">
-            <a href="https://github.com/benjdelt/tut-bucket" rel="noopener noreferrer" target="_blank">
             <i class="fab fa-github"></i> GitHub
             </a>
             <a class="popup-modal-dismiss">Close</a>
@@ -419,7 +422,7 @@
               </p>
               <ul>
                 <li>
-                  <span>•</span> Tech stack: <span>Django, React, PostgreSQL, TensorFlow</span>
+                  <span>•</span> Tech stack: <span>Django, React, Redux, PostgreSQL</span>
                 </li>
                 <li>
                   <span>•</span> Utilized <span>Git source control</span> through Bitbucket repository 

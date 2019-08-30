@@ -212,12 +212,27 @@
    <section id="portfolio">
       <div class="row">
         <div class="twelve columns collapsed">
-          <h1>Projects</h1>
+          <h1>Latest Projects</h1>
           <!-- portfolio-wrapper -->
           <div id="portfolio-wrapper" class="bgrid-quarters s-bgrid-thirds cf">
             <div class="columns portfolio-item">
               <div class="item-wrap">
-                <a href="#modal-01" title="Spotify Lyrics">
+                <a href="#modal-01" title="Many-Faced God">
+                  <img alt="Many-Faced God"src="images/portfolio/many-faced-god.jpg" />
+                  <div class="overlay">
+                    <div class="portfolio-item-meta">
+                      <h5>Many-Faced God</h5>
+                      <p><em>*In Progress*</em> On a photo, replace strangers with AI-generated faces</p>
+                    </div>
+                  </div>
+                  <div class="link-icon"><i class="icon-plus"></i></div>
+                </a>
+              </div>
+              <p class="tech-stack">React, Express, face-api</p>
+            </div> <!-- item end -->
+            <div class="columns portfolio-item">
+              <div class="item-wrap">
+                <a href="#modal-02" title="Spotify Lyrics">
                   <img alt="Spotify Lyrics" src="images/portfolio/spotify-lyrics.jpg" />
                   <div class="overlay">
                     <div class="portfolio-item-meta">
@@ -232,7 +247,7 @@
             </div> <!-- item end -->
             <div class="columns portfolio-item">
               <div class="item-wrap">
-                <a href="#modal-02" title="Tinee">
+                <a href="#modal-03" title="Tinee">
                   <img alt="Tinee" src="images/portfolio/tinee.jpg" />
                   <div class="overlay">
                     <div class="portfolio-item-meta">
@@ -247,7 +262,7 @@
             </div> <!-- item end -->
             <div class="columns portfolio-item">
               <div class="item-wrap">
-                <a href="#modal-03" title="InForm">
+                <a href="#modal-04" title="InForm">
                   <img alt="Inform" src="images/portfolio/inform.jpg" />
                   <div class="overlay">
                     <div class="portfolio-item-meta">
@@ -260,27 +275,32 @@
               </div>
               <p class="tech-stack">PostgreSQL, Express, React</p>
             </div> <!-- item end -->
-            <div class="columns portfolio-item">
-              <div class="item-wrap">
-                <a href="#modal-04" title="ChattyApp">
-                  <img alt="ChatyApp" src="images/portfolio/chatty.jpg" />
-                  <div class="overlay">
-                    <div class="portfolio-item-meta">
-                      <h5>ChattyApp</h5>
-                      <p>A full stack chat web app built with Node, Express and React</p>
-                    </div>
-                  </div>
-                  <div class="link-icon"><i class="icon-plus"></i></div>
-                </a>
-              </div>
-              <p class="tech-stack">Express, React WebSockets</p>
-            </div> <!-- item end -->
             
           </div> <!-- portfolio-wrapper end -->
         </div> <!-- twelve columns end -->
         <!-- Modal Popup
         --------------------------------------------------------------- -->
         <div id="modal-01" class="popup-modal mfp-hide">
+          <a href="https://github.com/benjdelt/spotify-lyrics" rel="noopener noreferrer" target="_blank">
+            <img class="scale-with-grid" src="images/portfolio/modals/many-faced-god.png" alt="Many-Faced God" />
+          </a>
+          <div class="description-box">
+            <h4>Many-Faced God</h4>
+            <p>
+                <span>In Progress.</span> Group project from Lighthouse Labs' Alumni Lab. A full stack web app built 
+                with <span>React and Express</span>. Upload a photo, detect all the faces and swap the faces of the 
+                people you don't know with AI generated ones. 
+            </p>
+            <span class="categories"><i class="fa fa-layer-group"></i>React, Express, face-api.js</span>
+          </div>
+          <div class="link-box">
+            <a href="https://github.com/benjdelt/many-faced-god" rel="noopener noreferrer" target="_blank">
+              <i class="fab fa-github"></i> GitHub 
+            </a>
+            <a class="popup-modal-dismiss">Close</a>
+          </div>
+        </div><!-- modal-01 End -->
+        <div id="modal-02" class="popup-modal mfp-hide">
           <a href="https://github.com/benjdelt/spotify-lyrics" rel="noopener noreferrer" target="_blank">
             <img class="scale-with-grid" src="images/portfolio/modals/spotify-lyrics.png" alt="Spotify Lyrics" />
           </a>
@@ -302,8 +322,8 @@
             </a>
             <a class="popup-modal-dismiss">Close</a>
           </div>
-        </div><!-- modal-01 End -->
-        <div id="modal-02" class="popup-modal mfp-hide">
+        </div><!-- modal-02 End -->
+        <div id="modal-03" class="popup-modal mfp-hide">
           <a href="https://github.com/benjdelt/tinee" rel="noopener noreferrer" target="_blank">
             <img class="scale-with-grid" src="images/portfolio/modals/tinee.png" alt="Tinee" />
           </a>
@@ -322,8 +342,8 @@
             </a>
             <a class="popup-modal-dismiss">Close</a>
           </div>
-        </div><!-- modal-02 End -->
-        <div id="modal-03" class="popup-modal mfp-hide">
+        </div><!-- modal-03 End -->
+        <div id="modal-04" class="popup-modal mfp-hide">
           <a href="https://github.com/benjdelt/InForm" rel="noopener noreferrer" target="_blank">
             <img class="scale-with-grid" src="images/portfolio/modals/inform.png" alt="InForm" />
           </a>
@@ -339,25 +359,6 @@
           </div>
           <div class="link-box">
             <a href="https://github.com/benjdelt/InForm" rel="noopener noreferrer" target="_blank">
-            <i class="fab fa-github"></i> GitHub
-            </a>
-            <a class="popup-modal-dismiss">Close</a>
-          </div>
-        </div><!-- modal-03 End -->
-        <div id="modal-04" class="popup-modal mfp-hide">
-          <a href="https://github.com/benjdelt/chattyApp" rel="noopener noreferrer" target="_blank">
-            <img class="scale-with-grid" src="images/portfolio/modals/chatty.png" alt="ChattyApp" />
-          </a>
-          <div class="description-box">
-            <h4>ChattyApp</h4>
-            <p>
-              A full stack chat web app built with <span>Node, Express and React</span>. It allows users to communicate in 
-              real time, recognizes image urls in messages and displays them as images. (Sept 2018)
-            </p>
-            <span class="categories"><i class="fa fa-layer-group"></i>, Express, React, WebSockets</span>
-          </div>
-          <div class="link-box">
-            <a href="https://github.com/benjdelt/chattyApp" rel="noopener noreferrer" target="_blank">
             <i class="fab fa-github"></i> GitHub
             </a>
             <a class="popup-modal-dismiss">Close</a>
